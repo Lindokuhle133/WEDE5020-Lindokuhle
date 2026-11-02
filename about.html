@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us |The Bloemfontein Coffee Roasting Co.</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Lightbox & Gallery Styling */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .gallery-img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .gallery-img:hover {
+            transform: scale(1.03);
+        }
+        /* Lightbox Modal Overlay */
+        #lightboxModal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            text-align: center;
+        }
+        #lightboxModal img {
+            max-width: 80%;
+            max-height: 80vh;
+            margin-top: 5vh;
+            border-radius: 6px;
+        }
+        #lightboxModal span {
+            position: absolute;
+            top: 20px;
+            right: 35px;
+            color: #fff;
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>The Bloemfontein Coffee Roasting Co.</h1>
+            </div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="services.html">Products & Menu</a>
+                <a href="enquiry.html">Catering & Orders</a>
+                <a href="contact.html">Visit & Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>About Us</h2>
+            <p>Rooted in Bloemfontein, we are passionate about bringing exceptional, sustainably sourced coffee to our community.</p>
+        </section>
+
+        <section class="container">
+            <h2>Our Story</h2>
+            <p>Founded with a deep love for artisan coffee craftsmanship, The Bloemfontein Coffee Roasting Co. has grown from a small local passion project into a community hub. We believe every cup tells a story—from the farmers who harvest the beans to the meticulous roasting process right here in the heart of the Free State.</p>
+            
+            <h2 style="margin-top: 30px;">Roastery Gallery</h2>
+            <p>Click any image below to view it in full screen using our interactive lightbox viewer.</p>
+            
+            <!-- Image Gallery Grid -->
+            <div class="gallery-grid">
+                <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=600&q=80" alt="Fresh Coffee Cup" class="gallery-img">
+                <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=600&q=80" alt="Coffee Roasting Beans" class="gallery-img">
+                <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=600&q=80" alt="Cafe Barista Station" class="gallery-img">
+                <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=600&q=80" alt="Pour Over Coffee" class="gallery-img">
+            </div>
+        </section>
+    </main>
+     <!-- Lightbox Modal Container -->
+    <div id="lightboxModal">
+        <span id="closeLightbox">&times;</span>
+        <img id="lightboxImg" src="" alt="Enlarged View">
+    </div>
+
+    <footer>
+        <p>Location: Bloemfontein, Free State | Hours: Mon- Sat: 07:00- 17:00</p>
+        <p>&copy; 2026 The Bloemfontein Coffee Roasting Co. All rights reserved</p>
+    </footer>
+
+    <!-- JavaScript File -->
+    <script src="js/about.js"></script>
+</body>
+</html>
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+            <h1>The Bloemfontein Coffee Roasting Co.</h1>
+        <nav>
+            
+                <a href="index.html">Home</a></li>
+                <a href="about.html">About Us</a></li>
+                <a href="services.html">Products &amp;Menu</a>
+                <a href="enquiry.html">Catering &amp;Orders</a>
+                <a href="contact.html">Visit &amp;Contact</a>
+            
+        </nav>
+         </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>About Us</h2>
+            <p>Discover the story behind the Bloemfontein Coffee Roasting Co. and our passion for quality coffee.</p>
+        </section>
+        <section class="container">
+            <h2>Our Story</h2>
+            <p> The Bloemfontein Coffee Co. is a local coffee business based in Bloemfontein, Free State. We are passionate about providing freshly roasted coffee and quality baked products to our customers</p>
+            <p>Our goal is to create a welcoming enviroment where customers can enjoy carefully prepared coffee, freshly baked treats and friendl service.</p>
+        </section>
+        <section class="container">
+            <div class="services-grid">
+                <article class="service-card">
+                    <h3>Our Mission</h3>
+                    <p>To provide customers with fresh , high-quality coffee and baked products while creating a friendly and welcoming coffee-shop experience.</p>
+
+                </article>
+
+                <article class="service-card">
+                    <h3>Our Vision</h3>
+                    <p>To become a trusted local coffee destination in Bloemfontein, known for quality products.</p>
+
+                </article>
+                <article class="service-card">
+                    <h3>Our Values</h3>
+                    <p>We value quality,freshness, customer services, constistency and supporting our local community.</p>
+
+                </article>
+            </div>
+        </section>
+        <!--Place inside <section class="about-hero">-->
+            <img src="https://images.unsplash.com/photo-1511920170033-f83924c348?auto=format&fit=crop&w=100&q=80" alt="Coffee roasting in progress" class="about-img">
+        </body>
+        </html>

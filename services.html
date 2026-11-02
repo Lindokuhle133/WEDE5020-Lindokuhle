@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products & Menu| The Bloemfontein Coffee Roasting Co.</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+              <h1>The Bloemfontein Coffee Roasting Co.</h1>
+            </div>
+            
+
+        <nav>
+            
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="services.html">Products &amp;Menu</a>
+                <a href="enquiry.html">Catering &amp;Orders</a>
+                <a href="contact.html">Visit &amp;Contact</a>
+            
+        </nav>
+
+    </header>
+    <main>
+        <section class="hero">
+            <h2>Our Products &amp;Menu</h2>
+            <p>Explore our fresh espresso drinks,roasted beanbags,and daily baked treats.</p>
+            </section>
+            <section class="container">
+                <div class="search-filter-bar" style="margin-bottom: 25px; display: flex; gap: 15px; flex-wrap: wrap;">
+                <input type="text" id="searchInput" placeholder="Search menu items..." style="padding: 10px; flex: 1; min-width: 200px; border: 1px solid #ccc; border-radius: 4px;">
+                <select id="categoryFilter" style="padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
+                    <option value="all">All Categories</option>
+                    <option value="Coffee">Coffee Beans</option>
+                    <option value="Bakery">Bakery & Pastries</option>
+                    <option value="Catering">Catering Packages</option>
+                </select>
+            </div>
+
+            <!-- Dynamically Loaded Services Grid -->
+            <div id="servicesContainer" class="service-grid">
+                <!-- JavaScript will populate items here -->
+            </div>
+        </section>
+
+        <!-- Interactive Accordion Section (Required for Part 3) -->
+        <section class="container" style="margin-top: 40px;">
+            <h2>Frequently Asked Questions</h2>
+            
+            <button class="accordion" style="background-color: #f1f1f1; cursor: pointer; padding: 12px; width: 100%; text-align: left; border: none; outline: none; font-weight: bold; font-size: 1rem; margin-top: 10px; border-radius: 4px;">What coffee beans do you use?</button>
+            <div class="panel" style="padding: 0 15px; display: none; background-color: white; overflow: hidden; border-left: 3px solid #6f4e37; margin-bottom: 10px;">
+                <p>We source 100% Arabica beans from sustainable farms across Africa and roast them fresh in-house weekly in Bloemfontein.</p>
+            </div>
+
+            <button class="accordion" style="background-color: #f1f1f1; cursor: pointer; padding: 12px; width: 100%; text-align: left; border: none; outline: none; font-weight: bold; font-size: 1rem; margin-top: 10px; border-radius: 4px;">Do you offer wholesale or bulk coffee supply?</button>
+            <div class="panel" style="padding: 0 15px; display: none; background-color: white; overflow: hidden; border-left: 3px solid #6f4e37; margin-bottom: 10px;">
+                <p>Yes! We supply cafes, offices, and restaurants with fresh bean batches. You can submit an order request via our Catering & Orders page.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Location: Bloemfontein, Free State | Hours: Mon- Sat: 07:00- 17:00</p>
+        <p>&copy; 2026 The Bloemfontein Coffee Roasting Co. All rights reserved</p>
+    </footer>
+
+    <!-- JavaScript File -->
+    <script src="js/services.js"></script>
+</body>
+</html>
+</html>

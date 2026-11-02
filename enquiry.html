@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="desciption" content="Submit an enquiry for catering,bulk coffee orders, or sponsorships at The Boemfontein Coffee Roasting Co.">
+    <title> The Bloemfontein Coffee Roasting Co. Catering& Orders</title>
+    <link rel="stylesheet"href="css/style.css">
+</head>
+<body>
+    
+    <header>
+        <div clas="container">
+            <div class="logo">
+                <h1>
+                The Bloemfontein Coffee Roasting Co.</h1>
+        </div>
+        <nav>
+            
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="services.html">Products &amp; Menu</a>
+                <a href="enquiry.html">Catering &amp; Orders</a>
+                <a href="contact.html">Visit &amp;Contact</a>
+            
+        </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            
+                <h2>Catering &amp; Orders</h2>
+                <p>Complete the form below to enquire about coffee, catering or bulk orders.</p>
+                </section>
+                <section class="container">
+                    <h2>Make an Enquiry</h2>
+            <p>Fill out the form below for catering quotes, bulk coffee orders, or sponsorship opportunities. Get instant pricing and availability estimates!</p>
+        </section>
+
+        <section class="container">
+            <form id="enquiryForm" novalidate>
+                <div class="form-group">
+                    <label for="enquiryName">Full Name *</label>
+                    <input type="text" id="enquiryName" name="enquiryName" required placeholder="e.g. John Smith">
+                    <small class="error-msg" id="enquiryNameError"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="enquiryEmail">Email Address *</label>
+                    <input type="email" id="enquiryEmail" name="enquiryEmail" required placeholder="e.g. john@example.com">
+                    <small class="error-msg" id="enquiryEmailError"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="enquiryType">Enquiry Type *</label>
+                    <select id="enquiryType" name="enquiryType" required>
+                        <option value="">-- Select Option --</option>
+                        <option value="Catering">Coffee & Pastry Catering</option>
+                        <option value="Bulk Order">Bulk Coffee Bean Order</option>
+                        <option value="Sponsorship">Sponsorship / Community Event</option>
+                    </select>
+                    <small class="error-msg" id="enquiryTypeError"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="quantity">Number of Guests / Bags of Coffee *</label>
+                    <input type="number" id="quantity" name="quantity" min="1" required placeholder="e.g. 25">
+                    <small class="error-msg" id="quantityError"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="details">Additional Details or Date Required *</label>
+                    <textarea id="details" name="details" rows="4" required placeholder="Specify event date, delivery address, or roast preference..."></textarea>
+                    <small class="error-msg" id="detailsError"></small>
+                </div>
+
+                <button type="submit" class="btn">Calculate Estimate & Submit</button>
+            </form>
+
+            <!-- Dynamic Response Section (Required for Part 3) -->
+            <div id="dynamicResult" class="dynamic-box" style="display: none; margin-top: 20px; padding: 15px; border: 1px solid #4CAF50; background-color: #e8f5e9; border-radius: 5px;">
+                <h3>Enquiry Summary & Cost Estimation</h3>
+                <p id="resultText"></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Location: Bloemfontein, Free State | Hours: Mon- Sat: 07:00- 17:00</p>
+        <p>&copy; 2026 The Bloemfontein Coffee Roasting Co. All rights reserved</p>
+    </footer>
+
+    <!-- JavaScript File -->
+    <script src="js/enquiry.js"></script>
+</body>
+</html> 
+
+                    
